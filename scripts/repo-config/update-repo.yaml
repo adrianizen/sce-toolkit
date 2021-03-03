@@ -1,0 +1,5 @@
+sce:
+  domain: selfconsciousengineer.com
+  webroot: /home/sites/selfconsciousengineer.com
+  branch: master
+  repo: ssh://git@github.com:adrianizen/selfconsciousengineer.com.git
