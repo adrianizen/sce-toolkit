@@ -10,7 +10,8 @@ RUN mkdir -p /build/
 WORKDIR /build/
 COPY ./dependency/ /build/
 # RUN ./base.sh
-RUN ./nginx.sh
+# RUN ./nginx.sh
+RUN apt-get install -y build-essential
 
 RUN apt-get install -y rsyslog
 RUN apt-get install -y logrotate
@@ -19,4 +20,4 @@ WORKDIR /
 
 EXPOSE 80
 EXPOSE 443
-CMD ./script/start.sh && /bin/bash
+# CMD ./script/start.sh && /bin/bash
