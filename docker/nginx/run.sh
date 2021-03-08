@@ -11,7 +11,10 @@ container_name=${container_base_name}_$[$i+1]
 
 docker run \
 --name ${container_name} \
+-v "${base_path}/${service_name}/sites-conf/":"/sites/" \
+-v "${base_path}/${service_name}/log/":"/var/log/nginx/" \
 -v ${DIR}/script/:"/script/" \
+-v /etc/ssl/:"/etc/ssl" \
 --net=host \
 -t $image_name \
  /bin/bash

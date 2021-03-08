@@ -18,5 +18,5 @@ WORKDIR /
 
 EXPOSE 80
 EXPOSE 443
-CMD ["/bin/bash"]
+CMD ["./script/start.sh", "/bin/bash"]
 # CMD ./script/start.sh && /bin/bash
