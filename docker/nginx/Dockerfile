@@ -6,9 +6,6 @@ RUN apt-get -y update
 # add ubuntu tools
 RUN apt-get install -y iproute2 tzdata
 
-# Set Timezone
-RUN timedatectl set-timezone UTC
-
 RUN mkdir -p /build/
 WORKDIR /build/
 COPY ./dependency/ /build/
