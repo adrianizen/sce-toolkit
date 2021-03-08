@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 # update the installation
-RUN apt-get update 
+RUN apt-get -y update 
 
 # add ubuntu tools
 RUN apt-get install -y iproute2
