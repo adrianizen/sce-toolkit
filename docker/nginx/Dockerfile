@@ -4,7 +4,7 @@ FROM ubuntu:20.04
 RUN apt-get -y update 
 
 # add ubuntu tools
-RUN apt-get install -y iproute2
+RUN apt-get install -y iproute2 tzdata
 
 # Set Timezone
 RUN timedatectl set-timezone UTC
