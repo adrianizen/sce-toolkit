@@ -4,7 +4,7 @@ services:
     image: "skelflo/sce"
     container_name: "skelflo_sce_1"
     build: .
-    restart: "once"
+    restart: "no"
     ports:
       - "9091:80"
     volumes:
