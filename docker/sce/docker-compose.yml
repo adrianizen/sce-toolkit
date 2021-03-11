@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  web:
+    image: "skelflo/sce"
+    container_name: "skelflo_sce_1"
+    build: .
+    restart: "once"
+    ports:
+      - "9091:80"
+    volumes:
+      - /home/skelflo/sce/sites/:/var/www/
+      - /script/:/script/
+      - /config/:/config
+    command: ./dependency/add_hosts.sh
