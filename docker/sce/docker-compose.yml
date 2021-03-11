@@ -11,4 +11,4 @@ services:
       - /home/skelflo/sce/sites:/var/www/html
       - ./script:/script
       - ./config:/config
-    command: ./dependency/add_hosts.sh
+    command: /build/add_hosts.sh
