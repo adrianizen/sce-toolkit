@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #	create database dns record
-host_ip=`$(route -n | awk '/UG[ \t]/{print $2}')`
+host_ip=$(route -n | awk '/UG[ \t]/{print $2}')
 database="$host_ip database \n"
 
 #	create mail server dns record
