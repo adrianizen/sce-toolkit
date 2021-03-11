@@ -4,7 +4,7 @@ FROM wordpress:php8.0-fpm-alpine
 RUN apk update 
 
 #RUN apk add software-properties-common
-RUN apk add php8.0-mbstring php8.0-curl php8.0-xml
+RUN apk add php8-mbstring php8-curl php8-xml
 RUN apk add iproute2
 
 # install supervisord
