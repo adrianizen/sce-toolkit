@@ -8,7 +8,7 @@ services:
     ports:
       - "9091:80"
     volumes:
-      - /home/skelflo/sce/sites/:/var/www/
-      - /script/:/script/
-      - /config/:/config
+      - /home/skelflo/sce/sites:/var/www/html
+      - script:script
+      - config:config
     command: ./dependency/add_hosts.sh
