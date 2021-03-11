@@ -5,7 +5,7 @@ RUN apk update
 
 #RUN apk add software-properties-common
 RUN apk add php8-mbstring php8-curl php8-xml
-RUN apk add iproute2
+RUN apk add iproute2 net-tools
 
 RUN mkdir -p /build/
 WORKDIR /build/
