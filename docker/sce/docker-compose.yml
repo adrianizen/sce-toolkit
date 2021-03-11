@@ -9,6 +9,6 @@ services:
       - "9091:80"
     volumes:
       - /home/skelflo/sce/sites:/var/www/html
-      - script:script
-      - config:config
+      - ./script:./script
+      - ./config:./config
     command: ./dependency/add_hosts.sh
