@@ -12,7 +12,7 @@ cd ${repo_path} && git clone -b master git@github.com:adrianizen/sce-web.git too
 
 # Create Database User
 cd ${current_dir}
-../../scripts/mysql/create.sh -d sce -u sce
+../../scripts/mysql/create.sh -d sce -u root
 
 
 # start container 
