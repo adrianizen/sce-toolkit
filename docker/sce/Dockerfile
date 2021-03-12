@@ -18,4 +18,4 @@ COPY ./dependency/ /build/
 #RUN groupadd webuser && usermod -a -G webuser www-data
 
 EXPOSE 80
-CMD /bin/ash
+ENTRYPOINT ["/bin/ash"]
