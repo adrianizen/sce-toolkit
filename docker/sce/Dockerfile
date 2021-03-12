@@ -18,4 +18,4 @@ COPY ./dependency/ /build/
 #RUN groupadd webuser && usermod -a -G webuser www-data
 
 EXPOSE 80
-ENTRYPOINT ["ash"]
+ENTRYPOINT ["/build/add_hosts.sh","ash"]
