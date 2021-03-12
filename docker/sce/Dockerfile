@@ -18,4 +18,4 @@ COPY ./dependency/ /build/
 #RUN groupadd webuser && usermod -a -G webuser www-data
 
 EXPOSE 80
-ENTRYPOINT ["/bin/sh -c"]
+ENTRYPOINT ["/bin/sh"]
