@@ -13,3 +13,4 @@ services:
       - /home/skelflo/sce/sites:/var/www/html
       - ./script:/script
       - ./config:/config
+    command: 'bash'
