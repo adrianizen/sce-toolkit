@@ -1,6 +1,7 @@
 version: "3.9"
 services:
   web:
+    tty: true
     image: "skelflo/sce"
     container_name: "skelflo_sce_1"
     build: .
