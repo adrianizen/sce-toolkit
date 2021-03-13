@@ -6,7 +6,7 @@ apk update
 apk add nginx
 
 # Add user
-groupadd webuser && usermod -a -G webuser www-data
+addgroup -S webuser && adduser -S www-data -G webuser
 
 mkdir -p /etc/nginx/conf.d && \
 mkdir -p /etc/nginx/sites-enabled && \
