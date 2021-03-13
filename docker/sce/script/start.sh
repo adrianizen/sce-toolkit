@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./add_hosts.sh
-./run_nginx.sh
+/script/add_hosts.sh
+/script/run_nginx.sh
