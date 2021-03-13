@@ -13,4 +13,4 @@ services:
       - /home/skelflo/sce/sites/sce:/var/www/html
       - ./script:/script
       - ./config:/config
-    entrypoint: : '/script/start.sh && /bin/ash'
+    entrypoint: "/script/start.sh && /bin/ash"
