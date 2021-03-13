@@ -1,7 +1,13 @@
 #!/bin/bash
 
+# copy nginx basic config
+cp /config/nginx/nginx.conf /etc/nginx/nginx.conf
+
 # enable site
-cp -r /config/sites-conf/* /etc/nginx/sites-enabled/
+cp -r /config/nginx.sites-conf/* /etc/nginx/sites-enabled/
+
+# start fpm
+rc-service php8-fpm start
 
 # Start nginx
-service nginx start
+rc-service nginx start
