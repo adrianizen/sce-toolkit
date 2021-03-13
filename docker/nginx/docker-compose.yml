@@ -8,6 +8,9 @@ services:
     build: .
     restart: "no"
     network_mode: "host"
+    expose: 
+      - "80"
+      - "443"
     volumes:
       - /home/skelflo/sce/log:/var/log/nginx/
       - ./config/sites-conf:/sites
