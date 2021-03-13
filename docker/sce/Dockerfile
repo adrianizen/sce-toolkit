@@ -14,9 +14,7 @@ COPY ./dependency/ /build/
 # install supervisord
 #RUN apt-get -y install supervisor
 
-# add user
-#RUN groupadd webuser && usermod -a -G webuser www-data
 
-RUN ./add_hosts.sh
+RUN ./install_nginx.sh
 
 EXPOSE 80

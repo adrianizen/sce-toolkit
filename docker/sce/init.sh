@@ -8,7 +8,7 @@ eval "$(ssh-agent -s)"
 ssh-add
 
 mkdir -p ${repo_path}
-cd ${repo_path} && git clone -b master git@github.com:adrianizen/sce-web.git toolkit --verbose 
+cd ${repo_path} && git clone -b master git@github.com:adrianizen/sce-web.git sce --verbose 
 
 # Create Database User
 cd ${current_dir}

@@ -6,6 +6,8 @@ RUN apt-get -y update
 # add ubuntu tools
 RUN apt-get install -y iproute2 tzdata
 
+RUN apt-get install nginx -y
+
 RUN mkdir -p /build/
 WORKDIR /build/
 COPY ./dependency/ /build/

@@ -1,8 +1,8 @@
 version: "3.9"
 services:
   web:
-    tty: true
-    stdin_open: true
+    # tty: true
+    # stdin_open: true
     image: "skelflo/sce"
     container_name: "skelflo_sce_1"
     build: .
@@ -10,7 +10,7 @@ services:
     ports:
       - "9091:80"
     volumes:
-      - /home/skelflo/sce/sites:/var/www/html
+      - /home/skelflo/sce/sites/sce:/var/www/html
       - ./script:/script
       - ./config:/config
-    command: 'bash'
+    entrypoint: : ['/script/start.sh && /bin/ash']
