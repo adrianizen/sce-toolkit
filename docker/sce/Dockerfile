@@ -16,4 +16,4 @@ COPY ./dependency/ /build/
 RUN ./install_nginx.sh
 
 EXPOSE 80
-ENTRYPOINT ["/bin/ash /script/start.sh && /bin/ash" ]
+ENTRYPOINT ["/script/start.sh" ]
