@@ -13,7 +13,7 @@ service cron start
 service rsyslog start
 
 # enable trukita site
-#cp -r /sites/* /etc/nginx/sites-enabled/
+cp -r /sites/* /etc/nginx/sites-enabled/
 
 # start the nginx
 #if [ ! -f /bin/nginx ]; then
