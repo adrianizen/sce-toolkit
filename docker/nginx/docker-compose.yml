@@ -8,9 +8,6 @@ services:
     build: .
     restart: "no"
     network_mode: "host"
-    ports:
-      - 80:80
-      - 443:443
     volumes:
       - /home/skelflo/sce/log:/var/log/nginx/
       - ./config/sites-conf:/sites
