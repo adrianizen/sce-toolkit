@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # overwrite the configuration
-# cp -r /config/nginx.conf /etc/nginx/nginx.conf
+cp -r /config/nginx.conf /etc/nginx/nginx.conf
 
 # add logrotate configuration
 cp -r /config/logrotate/logrotate.conf /etc/logrotate.conf && \

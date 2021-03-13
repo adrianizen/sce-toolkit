@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  web:
+    tty: true
+    stdin_open: true
+    image: "skelflo/nginx"
+    container_name: "skelflo_nginx_1"
+    build: .
+    restart: "no"
+    network_mode: "host"
+    volumes:
+      - /home/skelflo/sce/log:/var/log/nginx/
+      - ./config/sites-conf:/sites
+      - ./script:/script
+      - ./config:/config
