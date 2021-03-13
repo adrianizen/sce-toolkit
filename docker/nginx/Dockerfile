@@ -18,4 +18,5 @@ RUN apt-get install -y logrotate
 
 EXPOSE 80
 EXPOSE 443
+
 ENTRYPOINT ["/script/start.sh"]
