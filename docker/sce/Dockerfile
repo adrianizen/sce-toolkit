@@ -14,7 +14,6 @@ COPY ./dependency/ /build/
 #RUN apt-get -y install supervisor
 
 RUN ./install_nginx.sh
-COPY ./script/ /build/
 
 EXPOSE 80
-ENTRYPOINT [ "/build/start.sh && /bin/ash" ]
+ENTRYPOINT ["/bin/ash /script/start.sh && /bin/ash" ]
