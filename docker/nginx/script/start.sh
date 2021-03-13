@@ -21,3 +21,5 @@ cp -r /sites/* /etc/nginx/sites-enabled/
 #fi
 nginx -t && \
 service nginx start
+
+/bin/bash
