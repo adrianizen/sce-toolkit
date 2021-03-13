@@ -3,7 +3,7 @@ FROM wordpress:php8.0-fpm-alpine
 # update the installation
 RUN apk update 
 
-RUN apk add php8-mbstring php8-curl php8-xml php8-fpm
+RUN apk add php8-mbstring php8-curl php8-xml php8-fpm php8-cgi
 RUN apk add iproute2 net-tools openrc
 
 RUN mkdir -p /build/
