@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-docker-compose --verbose --rebuild up -d
+docker-compose --verbose up --build -d
 # DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # base_path="/home/skelflo"
 # image_name="skelflo/sce"
