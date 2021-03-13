@@ -7,10 +7,7 @@ services:
     container_name: "skelflo_nginx_1"
     build: .
     restart: "no"
-    network_mode: "host"
-    expose: 
-      - "80"
-      - "443"
+    network: "host"
     volumes:
       - /home/skelflo/sce/log:/var/log/nginx/
       - ./config/sites-conf:/sites

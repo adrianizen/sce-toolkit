@@ -16,8 +16,6 @@ RUN ./base.sh
 RUN apt-get install -y rsyslog
 RUN apt-get install -y logrotate
 
-WORKDIR /
-
 EXPOSE 80
 EXPOSE 443
 ENTRYPOINT ["./script/start.sh"]
