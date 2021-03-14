@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM wordpress:php8.0-fpm-alpine
 
 # update the installation
 RUN apk update 
