@@ -7,6 +7,7 @@
     timedatectl set-timezone UTC
     ```
 5. Setup UFW Ubuntu[https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-18-04]
+    - Enable UFW[https://askubuntu.com/questions/30781/see-configured-rules-even-when-inactive]
 6. Alpine User Command[https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/]
     - Service status list
         ```
