@@ -5,8 +5,8 @@ apk update
 # Install nginx
 apk add nginx
 
-# Add user
-addgroup -S webuser && adduser -S www-data -G webuser
+# Add webuser group and set www-data to webuser group 
+addgroup -S webuser && addgroup www-data webuser
 
 mkdir -p /etc/nginx/conf.d && \
 mkdir -p /etc/nginx/sites-enabled && \
