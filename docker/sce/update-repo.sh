@@ -7,8 +7,7 @@ echo "# Repo Path ${repo_path}"
 eval "$(ssh-agent -s)"
 ssh-add
 
-mkdir -p ${repo_path}
-cd ${repo_path} && git pull git@github.com:adrianizen/sce-web.git master:master --verbose 
+cd ${repo_path}"/sce" && git pull git@github.com:adrianizen/sce-web.git 
 sleep 1
 # change mod
 echo "# change mod on local repo"
