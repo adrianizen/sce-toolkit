@@ -5,10 +5,7 @@ services:
     stdin_open: true
     image: "skelflo/sce"
     container_name: "skelflo_sce_1"
-    networks:
-      default:
-        external:
-          name: bridge
+    network_mode: bridge
     build: .
     restart: "no"
     ports:
