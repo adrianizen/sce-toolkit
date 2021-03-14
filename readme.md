@@ -8,6 +8,10 @@
     ```
 5. Setup UFW Ubuntu[https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-18-04]
 6. Alpine User Command[https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/]
+    - Service status list
+        ```
+            rc-status --servicelist
+        ```
 
 
 # Docker File Structure
