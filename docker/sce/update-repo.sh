@@ -9,7 +9,7 @@ ssh-add
 
 mkdir -p ${repo_path}
 cd ${repo_path} && git pull -b master git@github.com:adrianizen/sce-web.git sce --verbose 
-sleep1
+sleep 1
 # change mod
 echo "# change mod on local repo"
 chmod 777 -R ./ && chown www-data:webuser -R ./

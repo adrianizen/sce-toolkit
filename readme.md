@@ -19,6 +19,16 @@
 2. config: mounted to container, store config for every module on running
 3. script: commands to run after container running
 
+# ! Update your server user data
+1. Add group webuser
+```
+groupadd webuser
+```
+2. Assign www-data to webuser
+```
+usermod -a www-data -G webuser
+```
+
 
 # Questions
 1. Why cannot assign host port on network host in docker compose yaml ?
