@@ -21,4 +21,5 @@
 
 
 # Questions
-1. Why cannot assign host port on network host in docker compose yaml
+1. Why cannot assign host port on network host in docker compose yaml ?
+2. Why nginx viewed as "Crashed" but it is actually running on Alpine docker container ?

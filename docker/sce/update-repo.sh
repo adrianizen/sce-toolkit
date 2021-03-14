@@ -8,7 +8,8 @@ eval "$(ssh-agent -s)"
 ssh-add
 
 mkdir -p ${repo_path}
-cd ${repo_path} && git clone -b master git@github.com:adrianizen/sce-web.git sce --verbose 
+cd ${repo_path} && git pull -b master git@github.com:adrianizen/sce-web.git sce --verbose 
+sleep1
 # change mod
 echo "# change mod on local repo"
 chmod 777 -R ./ && chown www-data:webuser -R ./
@@ -17,13 +18,3 @@ if [ $? -ne 0 ]; then
    echo "fail to change mod"
    exit
 fi
-
-
-# Create Database User
-cd ${current_dir}
-../../scripts/mysql/create.sh -d sce -u root
-
-
-# start container 
-echo "# Start Container"
-./run.sh

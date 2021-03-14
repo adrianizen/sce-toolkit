@@ -18,7 +18,8 @@ COPY ./dependency/ /build/
 # install supervisord
 #RUN apt-get -y install supervisor
 
-RUN ./install_nginx.sh
+RUN ./pre_start_php.sh
+RUN ./pre_start_nginx.sh
 
 EXPOSE 80
 ENTRYPOINT ["/script/start.sh"]

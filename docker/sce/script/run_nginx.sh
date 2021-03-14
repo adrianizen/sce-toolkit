@@ -10,8 +10,10 @@ cp -r /config/nginx/sites-conf/* /etc/nginx/sites-enabled/
 rc-update add nginx default
 rc-update add php-fpm8 default
 
+rc-status --servicelist
+
 # Start php fpm
-rc-service php-fpm8 restart
+rc-service php-fpm8 start
 
 # Start nginx
 rc-service nginx start
