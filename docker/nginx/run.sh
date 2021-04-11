@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Hmm we use docker-compose.yml instead of run.sh
 # docker-compose up --build -d
 image_name="skelflo/nginx"
 base_path="/home/skelflo"

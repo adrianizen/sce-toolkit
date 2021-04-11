@@ -12,7 +12,7 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - /home/skelflo/sce/log:/var/log/nginx/
+      - /home/skelflo/nginx/log:/var/log/nginx/
       - ./config/sites-conf:/sites
       - ./script:/script
       - ./config:/config

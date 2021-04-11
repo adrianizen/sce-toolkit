@@ -20,6 +20,7 @@
 2. config: mounted to container, store config for every module on running
 3. script: commands to run after container running
 
+
 # ! Update your server user data
 1. Add group webuser
 ```
@@ -30,6 +31,13 @@ groupadd webuser
 usermod -a www-data -G webuser
 ```
 
+# !MySQL settings
+1. Make MySQL listen to all interface [https://www.garron.me/en/bits/mysql-bind-all-address.html]  - hmm it should only listen to docker0 interface 
+    - reason[https://stackoverflow.com/questions/24319662/from-inside-of-a-docker-container-how-do-i-connect-to-the-localhost-of-the-mach]
+```
+# bind-address		= 127.0.0.1
+bind-address		= 0.0.0.0
+```
 
 # Questions
 1. Why cannot assign host port on network host in docker compose yaml ?
