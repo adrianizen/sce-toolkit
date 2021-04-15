@@ -15,9 +15,13 @@ container_name=${container_base_name}_$[$i+1]
 docker run \
 --name ${container_name} \
 -v "${base_path}/${service_name}/log/":"/var/log/nginx/" \
--v ${DIR}/config/sites-conf/:"/sites/" \
--v ${DIR}/script/:"/script/" \
--v /etc/ssl/:"/etc/ssl" \
+-v "${DIR}/config/sites-conf/":"/sites/" \
+-v "${DIR}/config/nginx.conf":"/config/nginx.conf" \
+-v "${DIR}/config/logrotate":"/config/logrotate" \
+-v "${DIR}/config/certbot/conf":"/etc/letsencrypt" \
+-v "${DIR}/config/certbot/www":"/var/www/certbot" \
+-v "${DIR}/script/":"/script/" \
+-v "/etc/ssl/":"/etc/ssl" \
 --net=host \
 -t $image_name \
  /bin/bash
