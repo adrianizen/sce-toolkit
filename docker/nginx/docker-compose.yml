@@ -8,9 +8,9 @@ services:
     build: .
     restart: "no"
     network_mode: "host"
-    ports:
-      - "80:80"
-      - "443:443"
+    # ports:
+    #   - "80:80"
+    #   - "443:443"
     volumes:
       - /home/skelflo/nginx/log:/var/log/nginx/
       - ./config/nginx.conf:/config/nginx.conf
