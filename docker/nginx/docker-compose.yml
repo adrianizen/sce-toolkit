@@ -20,7 +20,7 @@ services:
       - ./script:/script
   certbot:
     image: certbot/certbot
-    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+    #entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
     volumes:
       - ./config/certbot/letsencrypt:/etc/letsencrypt
       - ./config/certbot/www:/var/www/certbot
