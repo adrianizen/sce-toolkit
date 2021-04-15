@@ -4,7 +4,7 @@ services:
     tty: true
     stdin_open: true
     image: "skelflo/nginx"
-    container_name: "skelflo_nginx_1"
+    #container_name: "skelflo_nginx_1"
     build: .
     restart: "no"
     network_mode: "host"
