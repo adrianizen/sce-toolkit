@@ -12,7 +12,7 @@ chmod 644 /etc/logrotate.d/nginx
 service cron start
 service rsyslog start
 
-# enable trukita site
+# enable all config site
 cp -r /sites/* /etc/nginx/sites-enabled/
 
 # start the nginx
@@ -21,5 +21,7 @@ cp -r /sites/* /etc/nginx/sites-enabled/
 #fi
 nginx -t && \
 service nginx start
+
+while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"
 
 /bin/bash

@@ -13,3 +13,4 @@ mkdir -p /etc/nginx/sites-enabled && \
 mkdir -p /var/log/nginx && \
 touch /var/log/nginx/access.log && \
 touch /var/log/nginx/error.log
+
