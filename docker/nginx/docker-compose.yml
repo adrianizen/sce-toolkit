@@ -13,8 +13,9 @@ services:
     #   - "443:443"
     volumes:
       - /home/skelflo/nginx/log:/var/log/nginx/
+      - ./config/nginx.conf:/config/nginx.conf
       - ./config/sites-conf:/sites
-      - ./config/logrotate:/logrotate
+      - ./config/logrotate:/config/logrotate
       - ./config/certbot/conf:/etc/letsencrypt
       - ./config/certbot/www:/var/www/certbot
       - ./script:/script
