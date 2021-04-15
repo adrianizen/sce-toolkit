@@ -22,6 +22,6 @@ cp -r /sites/* /etc/nginx/sites-enabled/
 nginx -t && \
 service nginx start
 
-while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"
+# while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"
 
 /bin/bash
