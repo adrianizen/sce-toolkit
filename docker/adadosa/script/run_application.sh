@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cd /var/www/html && \
+    npm update && \
     npm run prod && \
     composer update --optimize-autoloader --no-dev && \
     php artisan config:cache && \
