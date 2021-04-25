@@ -13,7 +13,7 @@ rc-update add php-fpm8 default
 rc-status --servicelist
 
 # Start php fpm
-rc-service php-fpm8 start
+rc-service php-fpm8 restart
 
 # Start nginx
-rc-service nginx start
+rc-service nginx restart
