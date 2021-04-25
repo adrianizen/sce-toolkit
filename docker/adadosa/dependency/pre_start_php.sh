@@ -8,10 +8,8 @@ apk add php8-mysqli php8-mbstring php8-curl php8-xml php8-fpm php8-cgi \
     php8-dom php8-exif php8-fileinfo php8-json php8-openssl \
     php8-xml php8-zip php8-zlib \
     php8-ftp php8-session \
-    php8-tokenizer php8-imap \
-    php8-intl php8-redis \
-    php8-msgpack php8-igbinary php8-ldap php8-readline
-
+    php8-tokenizer php8-redis \
+    php8-msgpack php8-readline
 
 echo "cgi.fix_pathinfo = 0;" >> /etc/php8/php.ini
 
