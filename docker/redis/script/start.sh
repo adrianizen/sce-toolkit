@@ -16,5 +16,6 @@ set -e
 # exec "$@"
 mkdir -p /etc/redis
 cp -r /config/redis.conf /etc/redis/redis.conf
+cat /etc/redis/redis.conf
 
 redis-server /etc/redis/redis.conf
