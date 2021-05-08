@@ -96,10 +96,10 @@ RUN mkdir /data && chown redis:redis /data
 VOLUME /data
 WORKDIR /data
 
-COPY docker-entrypoint.sh /usr/local/bin/
+# COPY docker-entrypoint.sh /usr/local/bin/
 
 EXPOSE 6379
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["/script/start.sh"]
 
 
 # CMD ["redis-server"]
