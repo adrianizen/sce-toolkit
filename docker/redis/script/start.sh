@@ -19,3 +19,5 @@ cp -r /config/redis.conf /etc/redis/redis.conf
 cat /etc/redis/redis.conf
 
 redis-server /etc/redis/redis.conf
+
+/bin/bash
