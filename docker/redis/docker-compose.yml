@@ -13,7 +13,7 @@ services:
     #   - "443:443"
     command: ["redis-server", /config/redis.conf"]
     volumes:
-      - ./config/redis.conf:/config/redis.conf
+      - ./config:/config
       - ./redis/data:/data
     #   - /home/skelflo/nginx/log:/var/log/nginx/
     #   - ./config/nginx.conf:/config/nginx.conf
