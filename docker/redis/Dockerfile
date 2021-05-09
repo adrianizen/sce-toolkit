@@ -12,6 +12,7 @@ RUN mkdir -p /run/openrc \
     && touch /run/openrc/softlevel
 
 RUN apk add redis
+RUN rc-status --servicelist
 # COPY docker-entrypoint.sh /usr/local/bin/
 
 EXPOSE 6379
