@@ -2,6 +2,7 @@
 
 # Install mysqli
 docker-php-ext-install mysqli
+docker-php-ext-install pdo_mysql
 
 # Add php
 apk add php8-mysqli php8-mbstring php8-curl php8-xml php8-fpm php8-cgi \

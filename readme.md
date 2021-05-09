@@ -32,6 +32,12 @@ groupadd webuser
 ```
 usermod -a www-data -G webuser
 ```
+# ! INDESCRIBABLE ERROR POSSIBILITY XD
+1. Directory is not exist yet
+2. Permisson issue
+3. Firewall issue
+4. Config must be cached (?)
+
 
 # !MySQL settings
 1. Make MySQL listen to all interface [https://www.garron.me/en/bits/mysql-bind-all-address.html]  - hmm it should only listen to docker0 interface 
