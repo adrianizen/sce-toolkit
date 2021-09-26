@@ -2,6 +2,11 @@
 1. Self signed SSL[https://deliciousbrains.com/ssl-certificate-authority-for-local-https-development/]
     - Here's the tutorial. here[https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04]
     - on Ubuntu 20[https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04]
+    - renewal process
+    ```
+    sudo certbot renew --dry-run
+    ```
+    - Pentacent Medium [https://pentacent.medium.com/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71]
 2. What is build-essential package ? [https://linuxize.com/post/how-to-install-gcc-on-ubuntu-20-04]
 3. Setup Nginx [https://www.nginx.com/blog/setting-up-nginx/]
 4. Setup Timezone first if you are interrupted on installing nginx on docker
