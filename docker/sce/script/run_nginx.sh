@@ -12,6 +12,10 @@ rc-update add php-fpm8 default
 
 rc-status --servicelist
 
+# set user and group for php-fpm8
+echo "user=www-data;" >> /etc/php8/php-fpm8.d/www.conf
+echo "group=webuser;" >> /etc/php8/php-fpm8.d/www.conf
+
 # Start php fpm
 rc-service php-fpm8 start
 
