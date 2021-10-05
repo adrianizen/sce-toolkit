@@ -20,6 +20,8 @@
         ```
             rc-status --servicelist
         ```
+7. FIXED: This is WHY Wordpress doing infinite loop when we put wordpress behind reverse proxy that doesn't have SSL[link](https://wordpress.stackexchange.com/questions/250240/setting-serverhttps-on-prevents-access-to-wp-admin)
+8. PHP FPM Running as user nobody ?? LOL [link](https://serverfault.com/questions/617392/why-is-php-fpm-running-as-nobody)
 
 
 # Docker File Structure
