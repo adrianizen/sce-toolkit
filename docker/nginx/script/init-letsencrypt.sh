@@ -6,7 +6,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
 fi
 
 #domains=(adadosa.id www.adadosa.id)
-domains=(adadosa.id selfconsciousengineer.com)
+domains=(adadosa.id pakboy.id selfconsciousengineer.com)
 rsa_key_size=4096
 #data_path="./data/certbot"
 data_path="./../config/certbot"
