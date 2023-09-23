@@ -9,7 +9,7 @@
    ```
    -- execute via docker compose
    ```
-   docker-compose run --rm --entrypoint "certbot renew --dry-run" certbot
+   docker compose run --rm --entrypoint "certbot renew --dry-run" certbot
    ```
    - Pentacent Medium [https://pentacent.medium.com/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71]
 2. What is build-essential package ? [https://linuxize.com/post/how-to-install-gcc-on-ubuntu-20-04]
